@@ -40,16 +40,11 @@
       var l = {};
       l.uplty1_lbl = "<?php echo L::upl_uplty1_lbl; ?>";
     </script>
-    <?php foreach ([
-      'https://code.jquery.com/jquery-3.3.1.min.js' => 'f8da8f95b6ed33542a88af19028e18ae3d9ce25350a06bfc3fbf433ed2b38fefa5e639cddfdac703fc6caa7f3313d974b92a3168276b3a016ceb28f27db0714a',
-      'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' => 'f43dfd388488b509a66879608c35d7c1155f93dcec33ca875082f59f35552740d65e9a344a044d7ec534f0278a6bb6f0ed81047f73dcf615f7dcd76e0a482009',
-      'https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js' => '64681777a4c1e6a8edbd353a439a3f2c9338a702cdcbc53c5d7261faf2590d7a76c02f004ab97858e7a2bdaab67e961cdd39d308bcf20ef56363c621bcd61a5e',
-      'https://raw.githubusercontent.com/InventivetalentDev/MineRender/v1.1.0/dist/skin.min.js' => '5acd05d47d28928779a88a13126a396fc1a57cda55fb82180db9e69dba009ad466156e1ca75562026c2ebcdf195adcfc178c78602468eafe3303b726706447b0',
-      'https://cdn.jsdelivr.net/npm/sweetalert2@8.8.5' => '2d90ae300e9e37ef219afa3c50f2261e220f83424a83d30286d53492becce0ea6f1dc1749b0cd47eec37c6a008f877b79e40ab48638efd1462f4aeff2a288c96'
-    ] as $url => $sha512){
-      $expl = explode('/', $url);
-      echo '<script src="'.cacheGrab($url, end($expl), './', false, ['sha512', $sha512]).'"></script>';
-    } ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/InventivetalentDev/MineRender@1.4.6/dist/skin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js" integrity="sha256-NGC9JEuTWN4GhTj091wctgjzftr+8WNDmw0H8J5YPYE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/InventivetalentDev/MineRender@1.4.6/dist/skin.min.js"></script>
   </head>
   <body class="bg-light">
     <!-- Main Container -->
